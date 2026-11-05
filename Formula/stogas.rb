@@ -1,4 +1,4 @@
-# The publish workflow of https://github.com/StogasAI/stogas writes this file from each release's checked files.
+# Generated from each https://github.com/StogasAI/stogas release; edits here are overwritten.
 class Stogas < Formula
   desc "Verified local endpoint, sign-up and offline checks for the Stogas AI gateway"
   homepage "https://stogas.ai"
