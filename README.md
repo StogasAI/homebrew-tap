@@ -17,8 +17,12 @@ scoop install stogas/stogas
 
 ## Check an archive yourself
 
+The release workflow built an archive from its tag when this passes:
+
 ```console
-gh attestation verify <archive> --repo StogasAI/stogas
+gh attestation verify <archive> --repo StogasAI/stogas \
+  --signer-workflow StogasAI/stogas/.github/workflows/release.yml \
+  --source-ref refs/tags/v<version> --deny-self-hosted-runners
 ```
 
 Report problems in [StogasAI/stogas](https://github.com/StogasAI/stogas/issues).
